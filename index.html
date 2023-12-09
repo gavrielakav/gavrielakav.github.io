@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Capstone Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="section1">
+        <nav>
+            <div class="logo"><img src="Asset/archipelago.png" alt=""></div>
+            <div class="top-buttons">
+                <a href="index.html" class="home-button">Home</a>
+                <a href="about.html" class="about-button">About Us</a>
+            </div>
+        </nav>
+        <img src="Asset/pict1-lp.jpg" alt="">
+
+        <div id="search" class="search">
+            <div class="searchbar">
+                <div class="inputbar">
+                    <input id="searchInput" name="searchInput" type="text" placeholder="Enter a City or Hotel" required>
+                </div>
+                <button class="searchBtn1">
+                    <p><span>Check In</span></p>
+                    <span> <input type="date" id="check-in-date" name="check-in-date" required></span>
+                </button>
+                <button class="searchBtn1">
+                    <p><span>Check Out</span></p>
+                    <span><input type="date" id="check-out-date" name="check-out-date" required></span>
+                </button>
+                <button class="searchBtn">
+                    <p>Cari</p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="topDestination" id="top-destination">
+                <h2>Top Destination</h2>
+                <div class="TD">
+                    <div class="cardTD">
+                        <div class="cardTD2">
+                            <div class="itemTD" onclick="setSearchInput('Jakarta')">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/jakarta.jpeg" alt="">
+                                    <span>Jakarta</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td2.jpg" alt="">
+                                    <span>Bali</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td3.jpg" alt="">
+                                    <span>Bandung</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td4.jpg" alt="">
+                                    <span>Yogyakarta</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td5.jpg" alt="">
+                                    <span>Surabaya</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td6.jpg" alt="">
+                                    <span>Palembang</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td7.jpg" alt="">
+                                    <span>Semarang</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td8.jpg" alt="">
+                                    <span>Bogor</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td9.jpg" alt="">
+                                    <span>Malang</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td10.webp" alt="">
+                                    <span>Batam</span>
+                                </a>
+                            </div>
+                            <div class="itemTD">
+                                <a href="html/list-hotel.html">
+                                    <img src="Asset/td11.webp" alt="">
+                                    <span>Solo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="promotion" id="promotion">
+                <h2>Promotion</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="Asset/promo1.png" alt="Gambar 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Asset/promo2.png" alt="Gambar 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Asset/promo3.png" alt="Gambar 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="recommended" id="recommended">
+                <h2>Recommended for you</h2>
+                <div id="card-container" class="card-container">
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="card-content2">
+                  <div class="container">
+                    <div class="image">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <h1>Email Subscribe</h1>
+                    <p>Subscribe to our updates for the latest promotions and news.</p>
+                  </div>
+                  <form id="form-email" class="form-input2">
+                    <label for="email"> Email : </label>
+                    <input type="email" id="email" placeholder="Enter Your Email Here" name="email" required >
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                  </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/?lang=en-id">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <!-- <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+        </ul> -->
+        <p>Group 10 Section Surabaya © 2023 </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Tampilkan SweetAlert pop-up welcome saat halaman dimuat
+            Swal.fire({
+                title: 'Welcome to <br><img src="Asset/archipelago.png" alt="Custom Icon">',
+                html: 'Enhance your experience and immerse yourself in unmatched luxury by booking your stay with us on a cheerful staycation today. From the moment you arrive you can enjoy luxurious facilities, impeccable service, and a world of sophistication that awaits. Escape to a world where every detail is carefully crafted to offer you an unforgettable experience. Secure your reservation now and unlock a world of luxury that exceeds your expectations. Discover a paradise where luxury meets perfection, promising an unparalleled vacation like no other.',
+                confirmButtonText: 'OK',
+                customClass: {
+                    popup: 'custom-popup-class', // Ganti dengan kelas CSS sesuai kebutuhan
+                    title: 'custom-title-class', // Ganti dengan kelas CSS sesuai kebutuhan
+                    htmlContainer: 'custom-html-class', // Ganti dengan kelas CSS sesuai kebutuhan
+                },
+            });
+        });
+    </script>
+<!-- Di dalam tag <script> di akhir halaman HTML Anda -->
+    <script>
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        const form = document.getElementById('form-email');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            if (!isValidEmail(email)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Email',
+                    text: 'Please enter a valid email address.',
+                    confirmButtonText: 'OK',
+                })
+            }
+
+            try {
+                const response = await fetch('https://comfortable-tan-marlin.cyclic.app/api/email', {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                if (response.status === 201) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Email Sent',
+                        text: 'Thank you for subscribing.',
+                        confirmButtonText: 'OK',
+                    })
+                }
+
+                if (response.status === 500) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Internal Server Error',
+                        text: 'Something went wrong. Please try again later.',
+                        confirmButtonText: 'OK',
+                    })
+                }
+            } catch (err) {
+                console.error(err);
+            }
+        });
+    
+        async function getData() {
+            try {
+                const response = await fetch('https://comfortable-tan-marlin.cyclic.app/api/posts');
+                const data = await response.json();
+                const hotels = data.data
+
+                if (hotels.length > 0) {
+                    let htmlContent = '';
+
+                    hotels.forEach((hotel, index) => {
+                        htmlContent += `
+                            <div class="card">
+                                <a href="hotel-detail.html?id=${hotel.id}">
+                                    <img src="${hotel.images[0].url}" alt="Gambar ${index + 1}">
+                                    <div class="card-content">
+                                        <h3>${hotel.name}</h3>
+                                        <p>${hotel.city}</p>
+                                        <h4>Rp${hotel.price}</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        `;
+                    });
+
+                    document.getElementById('card-container').innerHTML = htmlContent;
+                } else {
+                    console.error('Data structure is not as expected.');
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        getData();
+
+    </script>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
