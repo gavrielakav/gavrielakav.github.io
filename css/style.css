@@ -649,7 +649,7 @@ nav {
 /* ---------Email Subs---------- */
 .wrapper {
   height: 50vh;
-  position: realtive;
+  position: relative;
 }
 
 .fas.fa-envelope {
