@@ -649,7 +649,7 @@ nav {
 /* ---------Email Subs---------- */
 .wrapper {
 <<<<<<< HEAD
-  height: 100vh;
+  height: 50vh;
 =======
   height: 50vh;
 >>>>>>> a416dec3faeb56c5a82f38487e6efb1f6031c4fc
@@ -672,6 +672,8 @@ nav {
   position: relative;
   top: 50%;
   left: 50%;
+  margin-top: 300px;
+  margin-bottom: 50px;
   transform: translate(-50%,-50%);
   border-radius: 1rem;
   padding: 4rem .5rem;
